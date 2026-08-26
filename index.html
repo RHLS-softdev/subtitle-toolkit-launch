@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Subtitle Toolkit — clean up .srt subtitles in your browser</title>
+		<meta
+			name="description"
+			content="Subtitle Toolkit — shift timing, convert frame rates, fix drift, censor words, and validate SRT subtitles. Everything runs locally in your browser; your files never leave your device."
+		/>
+		<link rel="icon" type="image/svg+xml" href="/subtitle-toolkit-launch/app/favicon.svg" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="topbar">
+			<span class="brand">Subtitle Toolkit</span>
+			<nav>
+				<a href="#features">Features</a>
+				<a href="#pro">Pro — $9</a>
+				<a href="#download">Download</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</header>
+
+		<section class="hero">
+			<h1>Clean up and prepare <strong>.srt</strong> subtitle files — in your browser</h1>
+			<p>
+				Shift timing, convert frame rates, correct drift, censor words, validate
+				against common style guides, and extract embedded subtitles from MKV/WebM
+				video. Everything runs client-side: no file you open here is ever
+				uploaded anywhere.
+			</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" href="app/">Open the app</a>
+			</div>
+		</section>
+
+		<main id="features" class="products">
+			<article class="card">
+				<h2>Shift &amp; rescale</h2>
+				<p class="tag">Timing tools</p>
+				<p>
+					Nudge every timestamp by a fixed offset, or rescale timing when a
+					subtitle was authored for a different frame rate than the video.
+					Fix subtitles that slowly fall out of sync with two reference points.
+				</p>
+			</article>
+
+			<article class="card">
+				<h2>Censor &amp; validate</h2>
+				<p class="tag">Content tools</p>
+				<p>
+					Mask chosen words across the whole file, and flag invalid or
+					overlapping timing and overlong lines against selectable style guides
+					(Netflix, BBC, WAI, EAA, Netflix Japanese/Chinese). One click
+					auto-wraps a too-long line.
+				</p>
+			</article>
+
+			<article class="card">
+				<h2>Extract from video</h2>
+				<p class="tag">MKV / WebM</p>
+				<p>
+					Pull embedded text subtitle tracks (SRT, ASS/SSA) straight out of an
+					<code>.mkv</code>/<code>.webm</code> container by streaming the file —
+					no video engine, no downloads, no full in-memory load.
+				</p>
+			</article>
+
+			<article class="card">
+				<h2>Encoding fix</h2>
+				<p class="tag">Garbled files</p>
+				<p>
+					Re-decode a file under a different text encoding if it came in garbled,
+					and optionally add a BOM on export.
+				</p>
+			</article>
+		</main>
+
+		<section id="download" class="download">
+			<h2>Run it anywhere, offline</h2>
+			<p>
+				The whole toolkit is static files that run entirely in the browser. Grab
+				the release ZIP to keep a copy on your own machine — extract, install
+				once, and it works with no account and no server.
+			</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" id="zip-download"
+					href="https://github.com/RHLS-softdev/subtitle-toolkit-launch/releases/latest/download/Subtitle-Toolkit-0.2.0.zip">Download Subtitle Toolkit</a>
+			</div>
+		</section>
+
+		<section id="pro" class="pro">
+			<article class="card pro-card">
+				<h2>Subtitle Toolkit Pro — $9, one-time</h2>
+				<p class="tag">Batch tools + saved presets, in your browser</p>
+				<ul class="pro-list">
+					<li>Batch process a whole folder of .srt files at once — one transform config, ZIP download</li>
+					<li>Batch video extraction — every text subtitle track from many MKV/WebM files</li>
+					<li>Saved presets — name a transform config, re-apply it in one click</li>
+				</ul>
+				<p class="pro-note">
+					Free single-file tools stay free, anonymous, and fully local. Pay once with a card — your Pro
+					purchase follows your account on any device. All processing stays in your browser; files never leave
+					your device.
+				</p>
+				<div class="card-actions">
+					<a class="btn btn-primary" href="app/">Get Pro — $9 (in the app)</a>
+				</div>
+			</article>
+		</section>
+
+		<section id="contact" class="contact">
+			<h2>Contact</h2>
+			<p>
+				Questions or feedback: <a href="mailto:rhls.softdev@gmail.com">rhls.softdev@gmail.com</a>
+			</p>
+		</section>
+
+		<footer>
+			<p>
+				© 2026 Subtitle Toolkit · <a href="mailto:rhls.softdev@gmail.com">rhls.softdev@gmail.com</a>
+				· Your files never leave your device.
+			</p>
+		</footer>
+
+		<script>
+			// Keep the canonical download URL in sync if it ever changes.
+			document.getElementById("zip-download").href =
+				"https://github.com/RHLS-softdev/subtitle-toolkit-launch/releases/latest/download/Subtitle-Toolkit-0.2.0.zip";
+		</script>
+	</body>
+</html>
