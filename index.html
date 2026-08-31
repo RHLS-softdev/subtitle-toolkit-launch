@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title data-i18n="stk.meta.title">Subtitle Toolkit — fix, convert &amp; validate .srt subtitles in your browser</title>
+		<meta
+			name="description"
+			content="Subtitle Toolkit — shift timing, convert frame rates, fix drift, censor words, and validate SRT subtitles. Everything runs locally in your browser; your files never leave your device."
+		/>
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<meta property="og:title" content="Subtitle Toolkit" />
+		<meta property="og:description" content="Fix, convert, and validate .srt subtitles in your browser — shift timing, correct drift, censor words, and validate against Netflix, BBC, and WAI style guides. Your files never leave your device." />
+		<meta property="og:site_name" content="Subtitle Toolkit" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://rhls-softdev.github.io/subtitle-toolkit-launch/" />
+		<meta property="og:image" content="https://rhls-softdev.github.io/subtitle-toolkit-launch/og-image.png" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Subtitle Toolkit — fix, convert &amp; validate .srt subtitles in your browser" />
+		<meta name="twitter:description" content="Fix, convert, and validate .srt subtitles entirely in your browser — shift timing, correct drift, censor words, and validate against Netflix, BBC, and WAI style guides. Nothing is ever uploaded." />
+		<meta name="twitter:image" content="https://rhls-softdev.github.io/subtitle-toolkit-launch/og-image.png" />
+		<meta name="theme-color" content="#004070" />
+		<link rel="canonical" href="https://rhls-softdev.github.io/subtitle-toolkit-launch/" />
+		
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebApplication",
+			"name": "Subtitle Toolkit",
+			"description": "SRT subtitle tools — shift timing, convert, fix drift, censor, validate. Runs in your browser.",
+			"url": "https://rhls-softdev.github.io/subtitle-toolkit-launch/app/",
+			"applicationCategory": "UtilityApplication"
+		}
+		</script>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="topbar">
+			<img src="rhls-logo-sm.png" alt="RHLS" class="topbar-logo" />
+			<span class="brand">Subtitle Toolkit</span>
+			<nav>
+				<a href="#features" data-i18n="stk.nav.features">Features</a>
+				<a href="#pro" data-i18n="stk.nav.pro">Pro — $9</a>
+				<a href="#download" data-i18n="stk.nav.download">Download</a>
+				<a href="#contact" data-i18n="stk.nav.contact">Contact</a>
+			</nav>
+		</header>
+
+		<section class="hero">
+			<h1><span data-i18n="stk.hero.title">Your subtitles, fixed and publish-ready — right in your browser</span></h1>
+			<p data-i18n="stk.hero.sub">Shift timing, convert frame rates, correct drift, censor words, and validate against Netflix, BBC, and WAI style guides — or pull subtitles straight out of MKV/WebM video. Everything runs locally in your browser, so your files never leave your device.</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" href="app/" data-i18n="stk.hero.cta">Open the app</a>
+			</div>
+		</section>
+
+		<main id="features" class="products">
+			<article class="card">
+				<h2 data-i18n="stk.card.shift.title">Shift &amp; rescale timing</h2>
+				<p class="tag" data-i18n="stk.card.shift.tag">Timing tools</p>
+				<p data-i18n="stk.card.shift.body">Nudge every timestamp by a fixed offset, or rescale timing when a subtitle was authored for a different frame rate. Re-sync subtitles that drift out of step using two reference points.</p>
+			</article>
+
+			<article class="card">
+				<h2 data-i18n="stk.card.censor.title">Censor &amp; validate</h2>
+				<p class="tag" data-i18n="stk.card.censor.tag">Content tools</p>
+				<p data-i18n="stk.card.censor.body">Mask chosen words across the whole file in one pass, and flag invalid or overlapping timing and overlong lines against selectable style guides — Netflix, BBC, WAI, EAA, and Netflix Japanese/Chinese. One click auto-wraps a too-long line.</p>
+			</article>
+
+			<article class="card">
+				<h2 data-i18n="stk.card.extract.title">Extract from video</h2>
+				<p class="tag" data-i18n="stk.card.extract.tag">MKV / WebM</p>
+				<p data-i18n="stk.card.extract.body">Pull embedded text subtitle tracks (SRT, ASS/SSA) straight from an .mkv/.webm container by streaming the file — no video engine, no downloads, no heavy memory load.</p>
+			</article>
+
+			<article class="card">
+				<h2 data-i18n="stk.card.encode.title">Encoding fix</h2>
+				<p class="tag" data-i18n="stk.card.encode.tag">Garbled files</p>
+				<p data-i18n="stk.card.encode.body">Re-decode a file under a different text encoding if it came in garbled, and optionally add a BOM on export.</p>
+			</article>
+		</main>
+
+		<section id="download" class="download">
+			<h2 data-i18n="stk.dl.title">Download once. Run forever, offline.</h2>
+			<p data-i18n="stk.dl.body">The entire toolkit is static files that run in the browser. Grab the release ZIP and keep your own copy — extract, install once, and it works with no account and no server.</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" id="zip-download"
+					href="https://github.com/RHLS-softdev/subtitle-toolkit-launch/releases/latest/download/Subtitle-Toolkit-0.2.0.zip" data-i18n="stk.dl.cta">Download Subtitle Toolkit</a>
+				<a class="btn" id="deb-download" href="https://github.com/RHLS-softdev/subtitle-toolkit-launch/releases/latest/download/Subtitle-Toolkit-0.2.0-linux-amd64.deb">Download .deb (Linux)</a>
+				<a class="btn" id="exe-download" href="https://github.com/RHLS-softdev/subtitle-toolkit-launch/releases/latest/download/Subtitle-Toolkit-0.2.0-win64.exe">Download .exe (Windows)</a>
+			</div>
+			<p class="muted-note">The <a href="guide.html">beginner's guide</a> walks you through your first file in under five minutes — no jargon, no setup.</p>
+		</section>
+
+		<section id="pro" class="pro">
+			<article class="card pro-card">
+				<h2 data-i18n="stk.pro.title">Subtitle Toolkit Pro — $9, one-time, yours forever</h2>
+				<p class="tag" data-i18n="stk.pro.tag">Batch power for whole folders of subtitles — still fully local</p>
+				<ul class="pro-list">
+					<li data-i18n="stk.pro.item1">Batch-process an entire folder of .srt files at once — one config, one ZIP download</li>
+					<li data-i18n="stk.pro.item2">Batch video extraction — every text subtitle track from many MKV/WebM files</li>
+					<li data-i18n="stk.pro.item3">Saved presets — name a transform config, re-apply it in one click</li>
+				</ul>
+				<p class="pro-note" data-i18n="stk.pro.note">The free single-file tools stay free, anonymous, and fully local. Pay once and Pro is yours forever — it follows your account on any device, and your files never leave your machine.</p>
+				<div class="card-actions">
+					<a class="btn btn-primary" href="app/" data-i18n="stk.pro.cta">Get Pro — $9 (in the app)</a>
+				</div>
+			</article>
+		</section>
+
+		<section id="android" class="download">
+			<h2 data-i18n="stk.android.title">Android companion</h2>
+			<p data-i18n="stk.android.body">The same toolkit on your phone — process .srt files offline, anywhere. Install the APK directly (sideload; &quot;install unknown apps&quot; prompt).</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" id="apk-download" href="https://github.com/RHLS-softdev/subtitle-toolkit-launch/releases/latest/download/Subtitle-Toolkit-0.2.0-android.apk" data-i18n="stk.android.cta">Download Android APK</a>
+			</div>
+		</section>
+
+		<section id="contact" class="contact">
+			<h2 data-i18n="stk.contact.title">Contact</h2>
+			<p>
+				<span data-i18n="stk.contact.body">Questions or feedback: rhls.softdev@gmail.com</span>
+			</p>
+		</section>
+
+		<footer>
+			<p>
+				<span data-i18n="stk.footer">© 2026 Subtitle Toolkit · rhls.softdev@gmail.com · Your files never leave your device.</span>
+			</p>
+			<p class="legal-links"><a href="guide.html">Guide</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund.html">Refund policy</a></p>
+		</footer>
+
+		<script>
+			document.getElementById("apk-download").href =
+				"https://github.com/RHLS-softdev/subtitle-toolkit-launch/releases/latest/download/Subtitle-Toolkit-0.2.0-android.apk";
+			// Keep the canonical download URL in sync if it ever changes.
+			document.getElementById("zip-download").href =
+				"https://github.com/RHLS-softdev/subtitle-toolkit-launch/releases/latest/download/Subtitle-Toolkit-0.2.0.zip";
+		</script>
+		<div class="lang-bar">
+			<label for="lang-select">🌐</label>
+			<select id="lang-select" aria-label="Language"></select>
+		</div>
+		<script src="localize/i18n-site.js"></script>
+		<script>
+			var switcher = document.getElementById("lang-select");
+			window.i18n.init({
+				renderSwitcher: function (locales, current, switchTo) {
+					Object.keys(locales).forEach(function (tag) {
+						var opt = document.createElement("option");
+						opt.value = tag; opt.textContent = locales[tag].name;
+						opt.selected = tag === current;
+						switcher.appendChild(opt);
+					});
+					switcher.addEventListener("change", function () { switchTo(switcher.value); });
+				}
+			});
+		</script>
+	</body>
+</html>
